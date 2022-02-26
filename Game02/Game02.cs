@@ -12,10 +12,7 @@ namespace Game02
         private SpriteBatch _spriteBatch;
         private readonly ScreenManager _screenManager;
 
-        //layer textures
-        private Texture2D _background;
-        private Texture2D _hills;
-        private Texture2D _treesAndBushes;
+
 
         public Game02()
         {
@@ -51,9 +48,6 @@ namespace Game02
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
-            _background = Content.Load<Texture2D>("Background");
-            _hills = Content.Load<Texture2D>("Hills");
-            _treesAndBushes = Content.Load<Texture2D>("TreesAndBushes");
         }
 
         protected override void Update(GameTime gameTime)
@@ -70,7 +64,6 @@ namespace Game02
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
 
             base.Draw(gameTime);
         }

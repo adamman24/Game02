@@ -25,6 +25,12 @@
 /processorParam:TextureFormat=Color
 /build:Background.png
 
+#begin BackgroundMusic.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:BackgroundMusic.mp3
+
 #begin blank.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -48,6 +54,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:BrownFox.png
+
+#begin FullBackground.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:FullBackground.png
 
 #begin gradient.png
 /importer:TextureImporter
@@ -73,6 +91,12 @@
 /processorParam:TextureFormat=Color
 /build:Hills.png
 
+#begin Jump.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Jump.wav
+
 #begin LazyDog.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -91,6 +115,12 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:TextureFormat=Compressed
 /build:menufont.spritefont
+
+#begin StartSound.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:StartSound.wav
 
 #begin TreesAndBushes.png
 /importer:TextureImporter

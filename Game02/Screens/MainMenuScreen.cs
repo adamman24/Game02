@@ -10,7 +10,7 @@ namespace Game02.Screens
     // The main menu screen is the first thing displayed when the game starts up.
     public class MainMenuScreen : MenuScreen
     {
-        public MainMenuScreen() : base("Main Menu")
+        public MainMenuScreen() : base("Quick Brown Fox Vs Lazy Dog")
         {
             var playGameMenuEntry = new MenuEntry("Play Game");
             var exitMenuEntry = new MenuEntry("Exit");
@@ -24,7 +24,7 @@ namespace Game02.Screens
 
         private void PlayGameMenuEntrySelected(object sender, PlayerIndexEventArgs e)
         {
-            //LoadingScreen.Load(ScreenManager, true, e.PlayerIndex, new GameplayScreen());
+            LoadingScreen.Load(ScreenManager, true, e.PlayerIndex, new GameplayScreen());
         }
 
         protected override void OnCancel(PlayerIndex playerIndex)

@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Media;
 using Game02.StateManagement;
 
 
@@ -16,11 +19,11 @@ namespace Game02.Screens
         private readonly List<MenuEntry> _menuEntries = new List<MenuEntry>();
         private int _selectedEntry;
         private readonly string _menuTitle;
-
         private readonly InputAction _menuUp;
         private readonly InputAction _menuDown;
         private readonly InputAction _menuSelect;
         private readonly InputAction _menuCancel;
+        private Background _background = new Background();
 
         // Gets the list of menu entries, so derived classes can add or change the menu contents.
         protected IList<MenuEntry> MenuEntries => _menuEntries;
